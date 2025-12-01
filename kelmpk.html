@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beranda Kelompok</title>
+
+<style>
+    body{
+        margin:0;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #1e293b, #0f172a);
+        color:white;
+    }
+
+    header{
+        padding:20px;
+        text-align:center;
+        background:rgba(255,255,255,0.05);
+        backdrop-filter:blur(8px);
+        box-shadow:0 2px 12px rgba(0,0,0,0.3);
+    }
+
+    header h1{
+        margin:0;
+        font-size:32px;
+        font-weight:600;
+    }
+
+    .container{
+        width:90%;
+        max-width:1000px;
+        margin:40px auto;
+        text-align:center;
+    }
+
+    .intro{
+        font-size:17px;
+        color:#cbd5e1;
+        margin-bottom:32px;
+    }
+
+    .members{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+        gap:22px;
+        margin-top:20px;
+    }
+
+    .card{
+        background:rgba(255,255,255,0.06);
+        padding:20px;
+        border-radius:16px;
+        border:1px solid rgba(255,255,255,0.1);
+        backdrop-filter:blur(10px);
+        transition:0.3s;
+        text-align:center;
+    }
+
+    .card:hover{
+        transform:translateY(-10px);
+        box-shadow:0 10px 35px rgba(0,0,0,0.4);
+    }
+
+    .avatar{
+        width:90px;
+        height:90px;
+        border-radius:50%;
+        overflow:hidden;
+        margin:auto;
+        margin-bottom:12px;
+        background:#334155;
+    }
+
+    .avatar img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
+
+    .name{
+        font-size:18px;
+        font-weight:600;
+        margin-bottom:4px;
+    }
+
+    .role{
+        color:#cbd5e1;
+        font-size:14px;
+    }
+
+    footer{
+        text-align:center;
+        color:#94a3b8;
+        margin-top:40px;
+        padding:20px;
+        font-size:14px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Beranda Kelompok</h1>
+</header>
+
+<div class="container">
+
+    <p class="intro">Selamat datang! Berikut adalah anggota kelompok kami yang terdiri dari 4 orang:</p>
+
+    <div class="members">
+
+        <div class="card">
+            <div class="avatar">
+                <img src="foto1.jpg" alt="Foto Anggota 1">
+            </div>
+            <div class="name">Hanif Khoirullah</div>
+            <div class="role">Koordinator Kelompok</div>
+        </div>
+
+        <div class="card">
+            <div class="avatar">
+                <img src="foto2.jpg" alt="Foto Anggota 2">
+            </div>
+            <div class="name">Arielyan Sultan Phasay</div>
+            <div class="role">Desain & Frontend</div>
+        </div>
+
+        <div class="card">
+            <div class="avatar">
+                <img src="foto3.jpg" alt="Foto Anggota 3">
+            </div>
+            <div class="name">Rakha Damarjati</div>
+            <div class="role">Backend & Integrasi</div>
+        </div>
+
+        <div class="card">
+            <div class="avatar">
+                <img src="foto4.jpg" alt="Foto Anggota 4">
+            </div>
+            <div class="name">Jonatan Farel Pratama</div>
+            <div class="role">Dokumentasi & QA</div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    Dibuat oleh Kelompok 4 — 2025
+</footer>
+
+</body>
+</html>
